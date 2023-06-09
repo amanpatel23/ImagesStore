@@ -1,0 +1,57 @@
+.card__outer {
+  background: #333;
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+}
+
+.card__inner {
+  padding: 6px 6px 14px 6px;
+}
+
+.card__image img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.image__desc p{
+  color: #f7f7f7;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.action__div {
+  position: absolute;
+  top: -7%;
+  right: -7%;
+  display: none;
+}
+
+.action__div i {
+  font-size: 1.4rem;
+  color: #262626;
+  background: #FF0000;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.update__btn {
+  margin-top: 4px;
+}
+
+.update__btn i {
+  background: #418EF2;
+}
+
+.card__outer:hover .action__div {
+  display: block;
+}
+
