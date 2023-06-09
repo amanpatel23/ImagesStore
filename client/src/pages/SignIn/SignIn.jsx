@@ -27,7 +27,7 @@ function SignIn() {
     e.preventDefault();
 
     try {
-        const response = await axios.post('/api/user/signin', {
+        const response = await axios.post('https://imagesstore-backend-api.onrender.com/api/user/signin', {
             email,
             password
         });

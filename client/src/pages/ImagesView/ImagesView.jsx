@@ -22,7 +22,7 @@ function ImagesView() {
     if (currAlbum) {
       const getImages = async () => {
         try {
-          const response = await axios.get("/api/user/getImages", {
+          const response = await axios.get("https://imagesstore-backend-api.onrender.com/api/user/getImages", {
             params: {
               albumId: currAlbum.albumId,
             },
@@ -43,7 +43,7 @@ function ImagesView() {
 
     e.preventDefault();
     try {
-      const response = await axios.post("/api/user/updateImageName", {
+      const response = await axios.post("https://imagesstore-backend-api.onrender.com/api/user/updateImageName", {
         editImageId,
         editImageName,
       });
@@ -97,7 +97,7 @@ function ImagesView() {
           album: currAlbum.albumId,
         };
 
-        const response = await axios.post("/api/user/saveImages", {
+        const response = await axios.post("https://imagesstore-backend-api.onrender.com/api/user/saveImages", {
           imageData,
           albumId: currAlbum.albumId,
         });

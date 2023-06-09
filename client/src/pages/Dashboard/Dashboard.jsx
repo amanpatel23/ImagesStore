@@ -28,7 +28,7 @@ function Dashboard() {
 
     try {
       const response = await axios.post(
-        "/api/user/addalbum",
+        "https://imagesstore-backend-api.onrender.com/api/user/addalbum",
         { albumName },
         {
           headers: {
@@ -58,7 +58,7 @@ function Dashboard() {
   useEffect(() => {
     const getAlbums = async () => {
       try {
-        const response = await axios.get("/api/user/albums", {
+        const response = await axios.get("https://imagesstore-backend-api.onrender.com/api/user/albums", {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },

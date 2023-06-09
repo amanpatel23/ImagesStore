@@ -13,7 +13,7 @@ function ImageCard({
   const deleteImageHandler = async (e) => {
     e.stopPropagation();
     try {
-      const response = await axios.get("/api/user/deleteImage", {
+      const response = await axios.get("https://imagesstore-backend-api.onrender.com/api/user/deleteImage", {
         params: {
           imageId: image._id,
           albumId: image.album,
