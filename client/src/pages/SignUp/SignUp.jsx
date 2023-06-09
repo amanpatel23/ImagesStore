@@ -39,7 +39,7 @@ function SignUp() {
     }
 
     try {
-        const response = await axios.post('/api/user/signup', {
+        const response = await axios.post('https://imagesstore-backend-api.onrender.com/api/user/signup', {
             name,
             email,
             password
